@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+* {
+  /* border: solid 1px black; */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  font-family: Noto Sans TC, serif;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+/* top */
+.top {
+  height: 250px;
+}
+.top .top-container {
+  max-width: 1200px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.top .top-container .home img {
+  width: 250px;
+}
+.top .top-container .title {
+  margin: 20px 0;
+}
+.top .top-container .title h4 {
+  font-size: 20px;
+  font-weight: 100;
+  color: #999;
+}
+.top .top-container nav .nav-link {
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  color: #777;
+}
+.top .top-container nav .nav-link:hover {
+  color: #000;
+  transition: 0.5s;
+}
+.top .top-container nav .pro {
+  color: #000;
+}
+
+/* profolio */
+.portfolio {
+  background-color: #ededed;
+  padding: 40px 0;
+}
+.portfolio .port-main {
+  text-align: center;
+  max-width: 1680px;
+  margin: 20px 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.portfolio .port-main .port-wrap {
+  font-size: 0px;
+  padding: 10px 90px;
+}
+.portfolio .port-main .port-wrap .txt {
+  width: 30%;
+  padding-left: 30px;
+  display: inline-block;
+  text-align: left;
+}
+.portfolio .port-main .port-wrap .txt h2,h3 {
+  font-family: Oswald, Noto Sans TC;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 10px;
+}
+.portfolio .port-main .port-wrap .txt p {
+  font-family: Noto Sans TC, serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+}
+.portfolio .port-main .port-wrap .pic {
+  display: inline-block;
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  font-size: 0;
+  text-align: center;
+}
+.portfolio .port-main .port-wrap .pic .work {
+  box-sizing: border-box;
+  display: inline-block;
+  width: calc((100% - 2%)/3);
+}
+.portfolio .port-main .port-wrap .pic .work .portbox {
+  margin: 0 6px 12px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: #ccc 2px 2px 2.5px;
+}
+.portfolio .port-main .port-wrap .pic .work .portbox .wpic {
+  cursor: pointer;
+}
+.portfolio .port-main .port-wrap .pic .work .portbox .wpic img:hover {
+  opacity: 0.8;
+  /* transform:scale(1.25);
+  transition: 0.5s; */
+}
+.portfolio .port-main .port-wrap .pic .work .portbox .wpic img {
+  width: 100%;
+}
+.portfolio .port-main .port-wrap .pic .work .portbox .wtxt {
+  padding: 10% 0;
+  background: #fff;
+}
+.portfolio .port-main .port-wrap .pic .work .portbox .wtxt h4 {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+.portfolio .port-main .port-wrap .pic .work .portbox .wtxt p {
+  font-size: 12px;
+  font-weight: 100;
+}
+/* 小螢幕 */
+@media screen and (max-width: 1000px){
+  .portfolio .port-main .port-wrap {
+    padding: 10px 10%;
+  } 
+  .portfolio .port-main .port-wrap .txt {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  } 
+  .portfolio .port-main .port-wrap .pic {
+    width: 100%;
+    padding: 0;
+  } 
+  .portfolio .port-main .port-wrap .pic .work{
+    width: 100%;
+  } 
+  .portfolio .port-main .port-wrap .pic .work .portbox {
+    margin: 0 0 4%;
+  }
+  .portfolio .port-main .port-wrap .pic .work .portbox .wtxt {
+    padding: 5% 0;
+  }
+}
+
+/* fotter */
+.footer {
+  background-color: #fafafa;
+}
+.footer p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: thin;
+  color: rgba(51, 51, 51, 0.5);
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* top-btn */
+.top-btn {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  height: 50px;
+  width: 50px;
+  z-index: 50;
+  background: url(/img/home_pic/top-btn.png);
+  background-size: contain;
+}

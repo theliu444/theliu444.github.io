@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+* {
+  /* border: solid 1px black; */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  font-family: Noto Sans TC, serif;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+/* top */
+.top {
+  height: 250px;
+}
+.top .top-container {
+  max-width: 1200px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.top .top-container .home img {
+  width: 250px;
+}
+.top .top-container .title {
+  margin: 20px 0;
+}
+.top .top-container .title h4 {
+  font-size: 20px;
+  font-weight: 100;
+  color: #999;
+}
+.top .top-container nav .nav-link {
+  font-family: Oswald, Noto Sans TC;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  color: #777;
+}
+.top .top-container nav .nav-link:hover {
+  color: #000;
+  transition: 0.5s;
+}
+
+/* protfolio */
+.portfolio {
+  background-color: #ededed;
+  padding: 40px 0;
+}
+.portfolio .port-main {
+  text-align: center;
+  max-width: 1680px;
+  margin: 20px 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.portfolio .port-main .port-wrap {
+  font-size: 0px;
+  padding: 10px 90px;
+}
+.portfolio .port-main .port-wrap .txt {
+  width: 25%;
+  padding-left: 30px;
+  display: inline-block;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+.portfolio .port-main .port-wrap .txt .txttitle h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 8px;
+}
+.portfolio .port-main .port-wrap .txt .txttitle p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.portfolio .port-main .port-wrap .txt .btn {
+  margin: 8px 8px 0 0;
+  padding: 6px 14px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
+  color: #fff;
+  background-color: #0a6eb4;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.portfolio .port-main .port-wrap .txt .btn:hover {
+  background-color: #333;
+  transition: 0.2s;
+}
+.portfolio .port-main .port-wrap .pic {
+  display: inline-block;
+  width: 75%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  font-size: 0;
+  text-align: center;
+}
+.portfolio .port-main .port-wrap .pic .work-item {
+  width: 100%;
+  box-sizing: border-box;
+}
+.portfolio .port-main .port-wrap .pic .work-item .item {
+  box-sizing: border-box;
+  display: inline-block;
+}
+.portfolio .port-main .port-wrap .pic .work-item .wpic {
+  width: 70%;
+  padding: 0;
+}
+.portfolio .port-main .port-wrap .pic .work-item .wpic .photo {
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.portfolio .port-main .port-wrap .pic .work-item .wpic .photo img {
+  width: 100%;
+}
+.portfolio .port-main .port-wrap .pic .work-item .wpic .photo .both {
+  display: inline-block;
+}
+.portfolio .port-main .port-wrap .pic .work-item .wpic .photo .both img {
+  width: 50%;
+}
+.portfolio .port-main .port-wrap .pic .work-item .wtxt {
+  padding-left: 20px;
+  width: 30%;
+  text-align: left;
+}
+.portfolio .port-main .port-wrap .pic .work-item .wtxt .txtmain {
+  margin-bottom: 20px;
+}
+.portfolio .port-main .port-wrap .pic .work-item .wtxt .txtmain h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.portfolio .port-main .port-wrap .pic .work-item .wtxt .txtmain p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+/* 小螢幕 */
+@media screen and (max-width: 1000px){
+  .portfolio .port-main .port-wrap {
+    padding: 10px 10%;
+  } 
+  .portfolio .port-main .port-wrap .txt {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  } 
+  .portfolio .port-main .port-wrap .pic {
+    width: 100%;
+    padding: 0;
+  } 
+  .portfolio .port-main .port-wrap .pic .work-item .item {
+    width: 100%;
+    padding: 0;
+  }
+  .portfolio .port-main .port-wrap .pic .work-item .wpic {
+    margin-bottom: 20px;
+  }
+}
+
+/* fotter */
+.footer {
+  background-color: #fafafa;
+}
+.footer p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: thin;
+  color: rgba(51, 51, 51, 0.5);
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* top-btn */
+.top-btn {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  height: 50px;
+  width: 50px;
+  z-index: 50;
+  background: url(/img/home_pic/top-btn.png);
+  background-size: contain;
+}
